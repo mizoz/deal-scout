@@ -1,0 +1,72 @@
+profile: calgary
+location: Calgary, AB
+currency: CAD
+limit: 25
+minimum_score: 18
+max_per_url: 3
+user_agent: "deal-scout/0.1 (+https://github.com/your-org/deal-scout)"
+
+blocked_keywords:
+  - pork
+  - bacon
+  - ham
+  - prosciutto
+  - salami
+  - sausage
+  - pepperoni
+  - chorizo
+  - pancetta
+  - lard
+  - ribs
+  - pork tenderloin
+
+priority_keywords:
+  fragrance: 28
+  cologne: 32
+  perfume: 24
+  clearance: 18
+  liquidation: 18
+  "90%": 45
+  "90% off": 55
+  "80%": 25
+  "70%": 18
+  "$1": 22
+  free: 16
+  Calgary: 14
+  online: 8
+  shipped: 8
+  "free ship": 14
+  coupon: 10
+  tester: 12
+
+sources:
+  - name: RedFlagDeals Hot Deals
+    type: atom
+    url: https://forums.redflagdeals.com/feed/forum/9
+    tags: [canada, online, rfd]
+
+  - name: Calgary Reddit Deals Search
+    type: reddit
+    url: https://www.reddit.com/r/Calgary/search.json?q=deals%20OR%20sale%20OR%20liquidation%20OR%20warehouse&restrict_sr=1&sort=new&limit=25
+    tags: [calgary, local, reddit]
+
+  - name: PerfumeOnline Clearance
+    type: merchant_page
+    url: https://perfumeonline.ca/
+    tags: [fragrance, cologne, online]
+    follow_product_pages: true
+    max_links: 35
+    include_keywords: [clearance, cologne, fragrance, men, perfume, edt, edp, tester]
+    blocked_keywords: [sample vial, "2ml", "5ml", "7.5ml", "10ml box", "15ml", mini spray, travel size, body spray, deodorant, after shave, aftershave, preowned]
+
+  - name: Treasure Hunt Liquidation
+    type: merchant_page
+    url: https://treasurehuntyeg.com/
+    tags: [calgary, liquidation, local]
+    include_keywords: [90% off, liquidation, Calgary, "$1", Thursday, weekly]
+
+  - name: Urban Wholesale Calgary
+    type: merchant_page
+    url: https://urbanwholesale.ca/
+    tags: [calgary, liquidation, pickup]
+    include_keywords: [deals, clearance, liquidation, Calgary, featured]
