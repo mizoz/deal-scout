@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from .filters import passes_filters
+from .filters import contains_any, passes_filters
 from .models import Deal
 from .scoring import score_deal
 from .sources import fetch_source
@@ -17,8 +17,6 @@ def scan(config: dict[str, Any], *, extra_includes: list[str] | None = None) -> 
 
     for source in config.get("sources", []):
         source_includes = list(source.get("include_keywords", []))
-        if extra_includes:
-            source_includes.extend(extra_includes)
         source_blocked = list(blocked) + list(source.get("blocked_keywords", []))
 
         try:
@@ -38,6 +36,9 @@ def scan(config: dict[str, Any], *, extra_includes: list[str] | None = None) -> 
 
         for deal in source_deals:
             if not passes_filters(deal, blocked_keywords=source_blocked, include_keywords=source_includes):
+                continue
+            include_text = " ".join([deal.title, deal.summary, deal.source])
+            if extra_includes and not contains_any(include_text, extra_includes):
                 continue
             score_deal(deal, priority)
             if deal.score >= minimum_score:

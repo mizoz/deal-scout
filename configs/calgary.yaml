@@ -38,6 +38,9 @@ priority_keywords:
   "free ship": 14
   coupon: 10
   tester: 12
+  edt: 8
+  edp: 6
+  men: 8
 
 sources:
   - name: RedFlagDeals Hot Deals
@@ -53,11 +56,11 @@ sources:
   - name: PerfumeOnline Clearance
     type: merchant_page
     url: https://perfumeonline.ca/
-    tags: [fragrance, cologne, online]
+    tags: [fragrance, online]
     follow_product_pages: true
     max_links: 35
     include_keywords: [clearance, cologne, fragrance, men, perfume, edt, edp, tester]
-    blocked_keywords: [sample vial, "2ml", "5ml", "7.5ml", "10ml box", "15ml", mini spray, travel size, body spray, deodorant, after shave, aftershave, preowned]
+    blocked_keywords: [sample vial, "2ml", "5ml", "7.5ml", "10ml box", "15ml", mini spray, travel size, body spray, deodorant, after shave, aftershave, shower gel, preowned]
 
   - name: Treasure Hunt Liquidation
     type: merchant_page

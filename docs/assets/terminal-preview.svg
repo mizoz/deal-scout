@@ -1,0 +1,20 @@
+<svg width="1180" height="610" viewBox="0 0 1180 610" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Deal Scout terminal table screenshot">
+  <rect width="1180" height="610" rx="22" fill="#0b1020"/>
+  <rect x="34" y="34" width="1112" height="542" rx="16" fill="#111827" stroke="#263142"/>
+  <circle cx="66" cy="64" r="7" fill="#ff5f57"/>
+  <circle cx="90" cy="64" r="7" fill="#ffbd2e"/>
+  <circle cx="114" cy="64" r="7" fill="#28c840"/>
+  <text x="58" y="112" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" fill="#8bd5ff">$ deal-scout scan --limit 8</text>
+  <text x="58" y="164" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#e5e7eb">#  Score  Deal                                                     Price    Discount  Source</text>
+  <text x="58" y="196" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#6b7280">-  -----  -------------------------------------------------------  -------  --------  ---------------------</text>
+  <text x="58" y="232" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#f8fafc">1  234    Code Vein II - Deluxe Edition - 90% Off                 $11.99   90%       RedFlagDeals Hot Deals</text>
+  <text x="58" y="268" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#f8fafc">2  158    4711 Men - 90ML EDC TESTER                              $15.35             PerfumeOnline Clearance</text>
+  <text x="58" y="304" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#f8fafc">3  158    Ab spirit millionaire Men - 100ML EDT TESTER             $13.95             PerfumeOnline Clearance</text>
+  <text x="58" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#f8fafc">4  152    Medline gauze pack, likely price error                    $2.99    98.93%    RedFlagDeals Hot Deals</text>
+  <text x="58" y="376" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#f8fafc">5  146    Guess seductive Men - 50ML EDT                            $19.95             PerfumeOnline Clearance</text>
+  <text x="58" y="434" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#a7f3d0">Filtered: pork, bacon, ham, pepperoni, sample vials, travel sizes</text>
+  <text x="58" y="470" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#fde68a">Boosted: cologne, fragrance, liquidation, 90% off, $1 finds, Calgary</text>
+  <rect x="58" y="506" width="282" height="38" rx="8" fill="#1f2937" stroke="#334155"/>
+  <text x="78" y="531" font-family="Inter, Arial, sans-serif" font-size="18" fill="#e5e7eb">terminal-first, shareable output</text>
+</svg>
+
